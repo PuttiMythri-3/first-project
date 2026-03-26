@@ -11,7 +11,7 @@ st.slider("select your age",0,100)
 st.checkbox("i agree")
 options=st.selectbox("select an option",["opt1","opt2","opt3"])
 st.write("you selected:",options)
-st.radio("select gender",["male","female","other"])
+st.radio("select gender",["male","female","other"])r
 st.sidebar.title("sidebar")
 st.sidebar.text_input("enter your name")
 st.sidebar.number_input("enter your age")
@@ -48,7 +48,7 @@ uploaded_file = st.file_uploader("Upload a file")
 
 if uploaded_file is not None:
     st.write("File uploaded successfully!")
-df=pd.read_csv("data.csv")
+df=pd.read_csv("data.csv",type=["csv"])
 st.write(df)
     
 
